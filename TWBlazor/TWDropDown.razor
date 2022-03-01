@@ -1,0 +1,15 @@
+﻿<div id="@Name" class="dropdown">
+    <label tabindex="0" class="m-1 btn">@Text </label>
+    
+    <ul id="@DropDownList" tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+        @if (@Items != null)
+        {
+            @foreach (var item in @Items)
+            {
+                <li><a href="@item.ItemAction">@item.ItemText</a></li>
+
+            }
+        }
+    </ul>
+</div>
+

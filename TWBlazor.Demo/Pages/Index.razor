@@ -1,0 +1,22 @@
+﻿@page "/"
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+
+<PageTitle>Index</PageTitle>
+
+
+
+ <TWDropDown Name="DropDown1" Text="Prueba DropDown" Items="@Items" />
+
+@code {
+    List<(string ItemText, string ItemAction)> Items { get; set; } = new List<(string ItemText, string ItemAction)> { ("Seleccionar", "#") };
+
+    protected override void OnInitialized()
+    {
+        Items.Add(("Inicio", "#"));
+        Items.Add(("Uno", "#"));
+        Items.Add(("Dos", "#"));
+        Items.Add(("Tres", "#"));
+    }
+}
