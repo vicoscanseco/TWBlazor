@@ -1,5 +1,15 @@
-﻿<div id="@Name" class="dropdown">
-    <label tabindex="0" class="m-1 btn">@Text </label>
+﻿<div id="@Name" class="dropdown @_cssClass">
+    <label tabindex="0" class="m-1 btn">
+        @Text &nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        class="h-4 w-4" fill="none" 
+        viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+        </svg>
+    </label>
     
     <ul id="@DropDownList" tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
         @if (@Items != null)
@@ -13,3 +23,4 @@
     </ul>
 </div>
 
+ 

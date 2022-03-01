@@ -1,13 +1,14 @@
 ﻿@page "/"
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<h1 class="text-3xl font-bold">
+    TWBlazor, TailwindCSS Blazor Components 
+</h1>
 
 <PageTitle>Index</PageTitle>
 
 
 
- <TWDropDown Name="DropDown1" Text="Prueba DropDown" Items="@Items" />
+<TWDropDown Name="DropDown1" Text="Prueba DropDown" Items="@Items" />
+
 
 @code {
     List<(string ItemText, string ItemAction)> Items { get; set; } = new List<(string ItemText, string ItemAction)> { ("Seleccionar", "#") };
